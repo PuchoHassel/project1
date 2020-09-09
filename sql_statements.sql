@@ -7,10 +7,9 @@ CREATE TABLE account(
 
 CREATE TABLE persoon (
   id int not null AUTO_INCREMENT,
-  Voornaam varchar(255),
-  Achternaam varchar(255),
-  Telefoon int,
-  Gebruikersnaam varchar(250),
+  First name varchar(255),
+  Last name varchar(255),
+  username varchar(250),
   PRIMARY KEY (id),
   FOREIGN KEY (id) REFERENCES account (id)
 );
